@@ -277,7 +277,14 @@ print("回答如下:\n", response)
 
 ## 5.微调与配置
 
-调用`Qwen/finetune.py`文件进行配置与微调。
+微调脚本能够帮你实现：
+
+- 全参数微调
+- LoRA
+- Q-LoRA
+
+
+本次使用 `LoRA` 参数进行微调，调用`Qwen/finetune.py`文件进行配置与微调。
 
 
 - --model_name_or_path Qwen-1_8B-Chat：指定预训练模型的名称或路径，这里是使用名为"Qwen-1_8B-Chat"的预训练模型。
@@ -369,6 +376,7 @@ print("回答如下:\n", response)
 
 ## 6.模型合并
 
+与全参数微调不同，LoRA和Q-LoRA的训练只需存储adapter部分的参数。使用LoRA训练后的模型，可以选择先合并并存储模型（LoRA支持合并，Q-LoRA不支持），再用常规方式读取你的新模型。
 
 ```python
 %%time
@@ -400,6 +408,7 @@ merged_model.save_pretrained("qwen-1_8b-finetune", max_shard_size="2048MB", safe
 
 ## 7.本地部署微调模型
 
+使用微调后且合并的模型进行本地部署。
 
 ```python
 %%time
