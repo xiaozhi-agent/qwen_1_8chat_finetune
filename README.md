@@ -133,7 +133,7 @@
 
 ## 2.模型下载
 
-阿里魔搭社区notebook的[jupyterLab](https://www.modelscope.cn/my/mynotebook/authorization)里：下载模型会缓存在 `/mnt/workspace/.cache/modelscope/`
+阿里魔搭社区notebook的[jupyterLab](https://www.modelscope.cn/my/mynotebook/authorization)里：下载模型会缓存在 `/mnt/workspace/.cache/modelscope/`。一般会缓存到你的C盘或用户空间，所以要根据自己情况查看模型。也可以通过下面日志查看模型所在位置，如`2024-03-16 16:30:54,106 - modelscope - INFO - Loading ast index from /mnt/workspace/.cache/modelscope/ast_indexer`。
 
 
 ```python
