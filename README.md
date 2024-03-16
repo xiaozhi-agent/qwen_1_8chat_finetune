@@ -4,7 +4,10 @@
 - 日期：2024-3-16
 - 作者：小知
 - 运行环境：jupyterLab
-- 基于lora参数微调Qwen1.8chat模型。
+- 微调样例数据集：
+    - [qwen_chat.json（小份数据）](qwen_chat.json) 
+    - [chat.json（中份数据）](chat.json) 
+- 描述：基于lora参数微调Qwen1.8chat模型。
 
 ## 1.环境配置
 
