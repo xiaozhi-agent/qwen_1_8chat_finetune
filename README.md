@@ -2,7 +2,7 @@
  基于lora微调Qwen1.8chat的实战教程
 
 - 日期：2024-3-16
-- 作者：小知
+- 作者：xiaozhi
 - 运行环境：jupyterLab
 - 微调样例数据集：
     - [qwen_chat.json（小份数据）](qwen_chat.json) 
